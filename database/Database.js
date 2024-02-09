@@ -18,7 +18,7 @@ const dbconnect = async () =>{
 }
 
 const connectDB = () => {
-    mongoose.connect(MONGO_URI).then(() => console.log('Connected!') )
+    mongoose.connect(mongoURI).then(() => console.log('Connected!') )
     mongoose.connection.on("error", err => {
 
         console.log("err", err)
