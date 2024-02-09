@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // const uri = "mongodb://127.0.0.1:27017/ecom";
-const mongoURI = process.env.DB_connect;
+const mongoURI = process.env.MONGODB_URI;
 
 // mongoose.connect(uri).then(() => console.log('Connected!') )
 
