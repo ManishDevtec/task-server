@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // const uri = "mongodb://127.0.0.1:27017/ecom";
-const uri = process.env.DB_connect;
+const mongoURI = process.env.DB_connect;
 
 // mongoose.connect(uri).then(() => console.log('Connected!') )
 
@@ -18,7 +18,7 @@ const dbconnect = async () =>{
 }
 
 const connectDB = () => {
-    mongoose.connect(uri).then(() => console.log('Connected!') )
+    mongoose.connect(mongoURI).then(() => console.log('Connected!') )
 }
 
 module.exports = connectDB;
